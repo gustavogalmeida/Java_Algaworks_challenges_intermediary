@@ -9,12 +9,7 @@ public class MaquinaCafe {
 	}
 	
 	public void fazerCafe() {
-		if(this.acucarDisponivel > 10) {
-			acucarDisponivel -= 10;
-			System.out.println("Fazendo seu cafe com 10 gramas de açucar.");
-		} else {
-			System.out.println("Não temos açucar suficiente para fazer seu café!");
-		}
+		fazerCafe(10);
 	}
 	
 	public void fazerCafe(int quantidadeAcucar) {
