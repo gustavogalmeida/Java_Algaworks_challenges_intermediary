@@ -1,6 +1,6 @@
 package com.gprojects.java;
 
-public class Conta {
+public abstract class Conta {
 	
 	protected String descricao;
 	protected double valor;

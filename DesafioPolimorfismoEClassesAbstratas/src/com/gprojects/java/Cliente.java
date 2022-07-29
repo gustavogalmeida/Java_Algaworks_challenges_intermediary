@@ -1,5 +1,5 @@
 package com.gprojects.java;
 
-public abstract class Cliente extends Pessoa{
+public class Cliente extends Pessoa{
 
 }
