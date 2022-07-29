@@ -7,6 +7,8 @@ public abstract class Conta {
 	protected String dataVencimento;
 	protected SituacaoConta situacaoConta;
 	
+	public abstract void detalhesConta();
+	
 	Conta() {
 		this.situacaoConta = SituacaoConta.PENDENTE;
 	}

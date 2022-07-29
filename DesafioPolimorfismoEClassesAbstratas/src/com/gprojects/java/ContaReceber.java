@@ -2,6 +2,15 @@ package com.gprojects.java;
 
 public class ContaReceber extends Conta {
 	
+	@Override
+	public void detalhesConta() {
+		System.out.println("Tipo: CR Conta a receber."
+				+ "\nCliente: " + this.cliente.getNome()
+				+ "\nValor: " + this.valor 
+				+ "\nDescricao: " + this.descricao
+				+ "\nData de vencimento: " + this.dataVencimento);
+	}
+	
 	Cliente cliente;
 
 	ContaReceber(){

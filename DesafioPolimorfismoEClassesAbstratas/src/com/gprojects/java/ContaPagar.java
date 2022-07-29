@@ -1,6 +1,15 @@
 package com.gprojects.java;
 
 public class ContaPagar extends Conta{
+	
+	@Override
+	public void detalhesConta() {
+		System.out.println("Tipo: CP Conta a Pagar.\n"
+				+ "Fornecedor: " + this.fornecedor.getNome()
+				+ "\nValor: " + this.valor 
+				+ "\nDescricao: " + this.descricao 
+				+ "\nData de vencimento: " + this.dataVencimento);
+	}
 
 	Fornecedor fornecedor;
 	
