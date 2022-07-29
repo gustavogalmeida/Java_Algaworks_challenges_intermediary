@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Arrays_module4_class5/src"/>
+	<classpathentry kind="src" path="Enum/src"/>
+	<classpathentry kind="src" path="Heranca&amp;Sobreposicao/src"/>
+	<classpathentry kind="src" path="SobrecargaDesafio/src"/>
+	<classpathentry kind="src" path="Static&amp;FinalChallenge/src"/>
+	<classpathentry kind="src" path="Wrappers&amp;Boxing/src"/>
+	<classpathentry kind="output" path="Arrays_module4_class5/bin"/>
+</classpath>
