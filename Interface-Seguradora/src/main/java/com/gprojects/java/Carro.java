@@ -11,7 +11,7 @@ public class Carro implements Seguravel{
 	}
 
 	public String obterDescricao() {
-		return "Carro fabricado em " + this.anoFabricacao + " e com valor de mercado: " + this.valorMercado;
+		return "Carro fabricado em " + this.anoFabricacao + ".\nValor de mercado: " + this.valorMercado;
 	}
 
 	public double calcularValorApolice() {
