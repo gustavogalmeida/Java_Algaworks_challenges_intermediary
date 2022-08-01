@@ -2,8 +2,8 @@ package com.gprojects.java;
 
 public class Carro implements Seguravel{
 
-	public double valorMercado;
-	public int anoFabricacao;
+	private double valorMercado;
+	private int anoFabricacao;
 	
 	public Carro(double valorMercado, int anoFabricacao) {
 		this.valorMercado = valorMercado;
