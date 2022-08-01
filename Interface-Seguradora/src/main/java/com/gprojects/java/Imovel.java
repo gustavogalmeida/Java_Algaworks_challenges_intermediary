@@ -11,11 +11,11 @@ public class Imovel implements Seguravel{
 	}
 
 	public String obterDescricao() {
-		return "Imovel com area construida de " + this.areaConstruida + "m2 e valor de mercado R$ " + this.valorMercado;
+		return "Imovel com area construida de " + this.areaConstruida + "m2.\nValor de mercado R$ " + this.valorMercado;
 	}
 	
 	public double calcularValorApolice() {
-		double valorApolice = this.valorMercado * this.valorMercado;
+		double valorApolice = this.valorMercado * 0.003d;
 		valorApolice += (this.areaConstruida * 0.05); 
 		
 		return valorApolice;
