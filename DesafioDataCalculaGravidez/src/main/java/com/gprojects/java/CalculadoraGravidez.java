@@ -11,22 +11,19 @@ public class CalculadoraGravidez {
 	
 	public static String calcularParto(String ultimaMenst) {
 		Date menst = stringToDate(ultimaMenst);
-		String previsaoParto = nextWeek(menst, 40);
-		return previsaoParto;
+		return nextWeek(menst, 40);
 	}
 	
 	public static String calcularConcepcao(String ultimaMenst) {
 		Date menst = stringToDate(ultimaMenst);
-		String concepcao = nextWeek(menst, 2);
-		return concepcao;
+		return nextWeek(menst, 2);
 	}
 	
 	public static String nextWeek(Date date, int weeks) {
 		Calendar gregorianCalendar = new GregorianCalendar();
 		gregorianCalendar.setTime(date);
 		gregorianCalendar.add(Calendar.WEEK_OF_YEAR, weeks);
-		String strDate = dateToString(gregorianCalendar.getTime());
-		return strDate;
+		return dateToString(gregorianCalendar.getTime());
 	}
 	
 	// conversor de String para data
@@ -44,8 +41,7 @@ public class CalculadoraGravidez {
 	// date para string
 	public static String dateToString(Date d) {
 		DateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		String dataParto = simpleDateFormat.format(d);
-		return dataParto;
+		return simpleDateFormat.format(d);
 	}
 	
 	public static void calcular (String ultimaMenst) {
