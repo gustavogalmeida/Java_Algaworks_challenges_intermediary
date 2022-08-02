@@ -8,11 +8,20 @@ public class MegaSena {
 		GeraSequencia geraSequencia = new GeraSequencia();
 		
 		System.out.println("Quantas jogos você precisa? ");
-		int j = scanner.nextInt();
+		int jogos = scanner.nextInt();
 		scanner.nextLine();
 		
-		for (int i = 0; i < j; i++) {
-			System.out.println(geraSequencia.gerar());
+		System.out.println("Quantas casas tem seu jogo? ");
+		int maximoCasas = scanner.nextInt();
+		scanner.nextLine();
+		
+		System.out.println("Quantos numeros deseja marcar no jogo? ");
+		int qtdMarcar = scanner.nextInt();
+		scanner.nextLine();
+		
+		for (int i = 0; i < jogos; i++) {
+			System.out.print("Jogo " + (i+1) + ": " + geraSequencia.gerar(qtdMarcar, maximoCasas));
+			System.out.println();
 		}
 	}
 }

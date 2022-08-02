@@ -1,19 +1,19 @@
 package com.gprojects.java;
 
 public class GeraSequencia {
-	public String gerar() {
+	public String gerar(int qtdMarcar, int maximoCasas) {
 		
 		int proximo;
-		int[] intSequencia = new int[6];
-		String strSequencia = "";
-		int i = 0;
+		int[] intSequencia = new int[qtdMarcar];
 		
+		
+		int i = 0;
 		do {
 			
 			boolean repetido=false;
-			proximo = (int) (Math.random() * 60 + 1);
+			proximo = (int) (Math.random() * maximoCasas + 1);
 			
-			for (int j = 0; j < 6; j++) {
+			for (int j = 0; j < qtdMarcar; j++) {
 				if (proximo == (intSequencia[j])) {
 					repetido = true;
 				}
@@ -24,13 +24,13 @@ public class GeraSequencia {
 				i++;
 			}
 			
-		} while (i < 6);
+		} while (i < qtdMarcar);
 		
 		
-		
-		for (int j = 0; j < 6; j++) {
+		String strSequencia = "";
+		for (int j = 0; j < qtdMarcar; j++) {
 			strSequencia += intSequencia[j];
-			if (j == 5) {
+			if (j == (intSequencia.length - 1)) {
 				strSequencia += ".";
 			} else {
 				strSequencia += ", ";
