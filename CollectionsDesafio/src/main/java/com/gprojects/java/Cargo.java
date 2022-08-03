@@ -1,3 +1,5 @@
+package com.gprojects.java;
+
 import java.math.BigDecimal;
 
 public class Cargo {
