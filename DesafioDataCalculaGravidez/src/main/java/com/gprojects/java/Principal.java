@@ -10,7 +10,7 @@ public class Principal {
 		System.out.print("Qual seu nome: ");
 		
 		String nome = scan.nextLine();
-		System.out.print("Data da ultima menstruação: ");
+		System.out.print("Data da ultima menstruacao: ");
 		String data = scan.nextLine();
 		System.out.println();
 		CalculadoraGravidez.calcular(data);

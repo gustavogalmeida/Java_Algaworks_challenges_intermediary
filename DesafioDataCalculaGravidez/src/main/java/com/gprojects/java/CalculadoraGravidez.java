@@ -45,8 +45,8 @@ public class CalculadoraGravidez {
 	}
 	
 	public static void calcular (String ultimaMenst) {
-		System.out.println("Data da sua 40° semana completa: " + calcularParto(ultimaMenst));
-		System.out.println("Data possivel da concepção: " + calcularConcepcao(ultimaMenst));
+		System.out.println("Data da sua 40Â° semana completa: " + calcularParto(ultimaMenst));
+		System.out.println("Data possivel da concepï¿½ï¿½o: " + calcularConcepcao(ultimaMenst));
 	}
 	
 }
