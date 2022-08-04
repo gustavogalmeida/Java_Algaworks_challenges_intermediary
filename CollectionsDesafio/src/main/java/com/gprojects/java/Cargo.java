@@ -2,10 +2,17 @@ package com.gprojects.java;
 
 import java.math.BigDecimal;
 
+/**
+ * Classe Cargo com atributos e seus metodos acessores.
+ * descricao: String
+ * salario: BigDecimal
+ *  
+ * @author Gustavo Almeida
+ *
+ */
 public class Cargo {
 	private String descricao;
-	private BigDecimal Salario;
-	
+	private BigDecimal salario;
 	
 	public String getDescricao() {
 		return descricao;
@@ -14,9 +21,9 @@ public class Cargo {
 		this.descricao = descricao;
 	}
 	public BigDecimal getSalario() {
-		return Salario;
+		return salario;
 	}
 	public void setSalario(BigDecimal salario) {
-		Salario = salario;
+		this.salario = salario;
 	}
 }

@@ -1,5 +1,12 @@
 package com.gprojects.java;
 
+/**
+ * Classe Politico com atributos e seus metodos acessores.
+ * nome: String
+ * cargo: Cargo 
+ * @author Gustavo Almeida
+ *
+ */
 public class Politico {
 	private String nome;
 	private Cargo cargo;
