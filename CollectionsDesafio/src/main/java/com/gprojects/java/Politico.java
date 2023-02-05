@@ -1,9 +1,7 @@
 package com.gprojects.java;
 
 /**
- * Classe Politico com atributos e seus metodos acessores.
- * nome: String
- * cargo: Cargo 
+ * 
  * @author Gustavo Almeida
  *
  */

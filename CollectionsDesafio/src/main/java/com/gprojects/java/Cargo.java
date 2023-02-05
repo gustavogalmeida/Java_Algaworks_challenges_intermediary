@@ -3,9 +3,7 @@ package com.gprojects.java;
 import java.math.BigDecimal;
 
 /**
- * Classe Cargo com atributos e seus metodos acessores.
- * descricao: String
- * salario: BigDecimal
+ *
  *  
  * @author Gustavo Almeida
  *
