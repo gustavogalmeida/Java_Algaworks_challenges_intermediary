@@ -1,9 +1,6 @@
 package testes;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,11 +15,31 @@ public class Main {
         students.add(s2);
         students.add(s3);
 
-        printStudents(students);
+        printStudentsSet(students);
+
+        // inciar testes com map e hashmap
+        Map<Integer, Student> studentsMap = new HashMap<Integer, Student>();
+        // esssa declaração do Map<K, V) você especifica o DataType dos mesmos
+        // a chave e o valor do MAP são objetos, então não podemos usar tipos primitivos
+        // para usar preciso colocar a int no PUT
+
+        studentsMap.put(1, s1);
+        studentsMap.put(2, s2);
+        int chave3 = 3;
+        studentsMap.put(chave3, s3); // conforme esse exemplo
+
+        printStudentsMap(studentsMap);
     }
-    public static void printStudents(Set<Student> students){
+    public static void printStudentsSet(Set<Student> students){
+        System.out.println("Impressão Set:");
         for (Student s : students){
             System.out.println("Name: " + s.getName());
+        }
+    }
+    public static void printStudentsMap(Map<Integer, Student> students){
+        System.out.println("\nImpressão Map:");
+        for (Student s : students.values()){
+            System.out.println("Nome: " + s.getName());
         }
     }
 }
