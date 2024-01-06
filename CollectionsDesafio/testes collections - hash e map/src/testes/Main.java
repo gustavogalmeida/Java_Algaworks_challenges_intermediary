@@ -25,8 +25,9 @@ public class Main {
 
         studentsMap.put(1, s1);
         studentsMap.put(2, s2);
-        int chave3 = 3;
-        studentsMap.put(chave3, s3); // conforme esse exemplo
+        int chave3 = 3; // tipo primitivo
+        studentsMap.put(chave3, s3); // conforme esse exemplo sobre os tipos primitivos
+        studentsMap.put(4, s3); // no map consigo fazer com que um objeto seja referenciado por mais de uma chave;
 
         printStudentsMap(studentsMap);
     }
