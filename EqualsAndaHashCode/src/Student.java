@@ -1,7 +1,23 @@
+import java.util.Objects;
+
 public class Student {
     private Long registrationNumber;
     private String name;
     private Integer age;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(registrationNumber, student.registrationNumber) && Objects.equals(name, student.name) && Objects.equals(age, student.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(registrationNumber, name, age);
+    }
+
     public Student(Long registrationNumber, String name) {
         this.name = name;
     }

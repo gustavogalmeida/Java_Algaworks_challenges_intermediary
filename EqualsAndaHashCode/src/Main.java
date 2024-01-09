@@ -7,7 +7,7 @@ public class Main {
         // sortear aluno
         Student studentDrawn = new Student(1L, "Pedro");
 
-        if (students.contains(studentDrawn)){
+        if (students.equals(studentDrawn)){
             System.out.println("Congratulations, " + studentDrawn + ", you won a gift!");
         } else {
             System.out.println("Student not registred in the database.");
