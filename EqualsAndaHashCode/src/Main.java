@@ -4,16 +4,16 @@ public class Main {
     public static void main(String[] args){
         Set<Student> students = DataBaseSimulator.findStudents();
 
-        // sortear aluno
+        // Drawn Student
         Student studentDrawn = new Student(1L, "Pedro");
 
-        if (students.equals(studentDrawn)){
-            System.out.println("Congratulations, " + studentDrawn + ", you won a gift!");
+        if (students.contains(studentDrawn)){
+            System.out.println("Congratulations, " + studentDrawn.getName() + ", you won a gift!");
         } else {
             System.out.println("Student not registred in the database.");
         }
 
-        // IMPRIMIR TODOS
+        // print everybody
         //for (Student s : students){
         //    System.out.println("Nome: " + s.getName());
         //}

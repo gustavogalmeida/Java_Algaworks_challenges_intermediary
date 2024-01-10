@@ -10,7 +10,7 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return Objects.equals(registrationNumber, student.registrationNumber) && Objects.equals(name, student.name) && Objects.equals(age, student.age);
+        return Objects.equals(registrationNumber, student.registrationNumber);
     }
 
     @Override
